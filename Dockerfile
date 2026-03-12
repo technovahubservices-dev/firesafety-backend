@@ -17,8 +17,8 @@ RUN apt-get update && apt-get install -y \
 RUN docker-php-ext-configure intl \
     && docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd zip intl
 
-# Enable rewrite module
-RUN a2enmod rewrite
+# Enable Apache modules needed for Laravel and asset caching/compression
+RUN a2enmod rewrite headers expires deflate
 
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
@@ -45,7 +45,7 @@ RUN php artisan storage:link || true
 # Clear caches on build
 RUN php artisan config:clear \
     && php artisan route:clear \
-    && php artisan view:clear
+    && php artisan view:clear || true
 
 # Suppress Apache ServerName warning
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf

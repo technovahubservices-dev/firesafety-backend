@@ -11,6 +11,15 @@ services:
         condition: service_healthy
     environment:
       APACHE_DOCUMENT_ROOT: /var/www/html/public
+      APP_ENV: ${APP_ENV:-local}
+      APP_DEBUG: ${APP_DEBUG:-true}
+      APP_URL: ${APP_URL:-http://localhost:8080}
+      DB_CONNECTION: ${DB_CONNECTION:-mysql}
+      DB_HOST: ${DB_HOST:-db}
+      DB_PORT: ${DB_PORT:-3306}
+      DB_DATABASE: ${DB_DATABASE:-seytest_adminpanel}
+      DB_USERNAME: ${DB_USERNAME:-seytest_adminpanel}
+      DB_PASSWORD: ${DB_PASSWORD:-change_me}
 
   db:
     image: mysql:8.0
@@ -21,10 +30,10 @@ services:
       - db-data:/var/lib/mysql
       - ./database_dump.sql:/docker-entrypoint-initdb.d/database_dump.sql
     environment:
-      MYSQL_ROOT_PASSWORD: rootpassword
-      MYSQL_DATABASE: seytest_adminpanel
-      MYSQL_USER: seytest_adminpanel
-      MYSQL_PASSWORD: i2}QOex2?O3$
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-rootpassword}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-seytest_adminpanel}
+      MYSQL_USER: ${MYSQL_USER:-seytest_adminpanel}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-change_me}
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-prootpassword"]
       timeout: 20s

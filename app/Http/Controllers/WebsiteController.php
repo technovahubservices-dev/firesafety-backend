@@ -8,15 +8,27 @@ use App\Models\Gallery;
 use App\Models\MainProduct;
 use App\Models\SubProduct;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cache;
 
 class WebsiteController extends Controller
 {
     public function home()
     {
-        $subProducts = SubProduct::where('status', 1)
-            ->with('mainproduct')
-            ->get();
-        $blogs = Blog::where('status', 1)->limit(3)->get();
+        $subProducts = Cache::remember('website.home.sub_products', now()->addMinutes(10), function () {
+            return SubProduct::where('status', 1)
+                ->select(['id', 'main_product_id', 'name', 'price', 'description', 'url', 'image', 'status'])
+                ->with(['mainproduct:id,product_name,image,status'])
+                ->get();
+        });
+
+        $blogs = Cache::remember('website.home.blogs', now()->addMinutes(10), function () {
+            return Blog::where('status', 1)
+                ->select(['id', 'title', 'url', 'image', 'content', 'created_at', 'status'])
+                ->latest('id')
+                ->limit(3)
+                ->get();
+        });
+
         return view('website.home', compact('subProducts', 'blogs'));
     }
     public function about()
@@ -29,15 +41,18 @@ class WebsiteController extends Controller
     }
     public function productlist(Request $request)
     {
-        // 1. Get all main products (categories) for the sidebar
-        // We only select categories that are 'active'
-        $mainProducts = MainProduct::where('status', 1)->get();
+        $mainProducts = Cache::remember('website.productlist.main_products', now()->addMinutes(10), function () {
+            return MainProduct::where('status', 1)
+                ->select(['id', 'product_name', 'description', 'image', 'status'])
+                ->get();
+        });
 
-        // 2. Get all sub-products for the grid
-        // We eager-load 'mainproduct' to avoid N+1 query problems
-        $subProducts = SubProduct::where('status', 1)
-            ->with('mainproduct')
-            ->get();
+        $subProducts = Cache::remember('website.productlist.sub_products', now()->addMinutes(10), function () {
+            return SubProduct::where('status', 1)
+                ->select(['id', 'main_product_id', 'name', 'price', 'description', 'url', 'image', 'status'])
+                ->with(['mainproduct:id,product_name,image,status'])
+                ->get();
+        });
 
         // 3. Return the view and pass BOTH variables to it
         return view('website.productlist', [
@@ -93,8 +108,12 @@ class WebsiteController extends Controller
     }
     public function websiteblog()
     {
-        $blogs = Blog::where('status', 1)->get();
-        // return $blogs;
+        $blogs = Cache::remember('website.blog.list', now()->addMinutes(10), function () {
+            return Blog::where('status', 1)
+                ->select(['id', 'title', 'url', 'image', 'content', 'created_at', 'status'])
+                ->latest('id')
+                ->get();
+        });
 
         return view('website.blog', compact('blogs'));
     }
@@ -109,7 +128,13 @@ class WebsiteController extends Controller
     }
     public function websitegallery(Request $request)
     {
-        $gallerys = Gallery::where('status', 1)->with('category')->get();
+        $gallerys = Cache::remember('website.gallery.list', now()->addMinutes(10), function () {
+            return Gallery::where('status', 1)
+                ->select(['id', 'image', 'category_id', 'status'])
+                ->with('category:id,category')
+                ->get();
+        });
+
         return view('website.gallery', compact('gallerys'));
     }
     public function contact()

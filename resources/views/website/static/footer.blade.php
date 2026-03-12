@@ -1,6 +1,6 @@
 <footer class="site-footer-two">
     <div class="site-footer-two__shape-1 float-bob-x">
-        <img src="website_assets/images/shapes/site-footer-two-shape-1.png" alt="">
+        <img src="{{ asset('website_assets/images/shapes/site-footer-two-shape-1.png') }}" alt="">
     </div>
     <div class="container">
         <div class="site-footer-two__top">
@@ -129,3 +129,4 @@
         </div>
     </div>
 </footer>
+

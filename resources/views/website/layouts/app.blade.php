@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="{{ url('/') }}/">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
     <title>@yield('seo_title', 'VCrds - Single QR Code for All Business Connections')</title>
     <meta name="description" content="@yield('seo_description', 'One QR code to connect all your business platforms - Facebook, Instagram, WhatsApp, UPI, Google Reviews, Products & more. Boost engagement with VCrds.')">
     <meta name="keywords" content="@yield('seo_keywords', 'qr code generator, digital business card, social media links, upi payment, product catalogue, business growth, multi-platform connection')">
@@ -80,7 +82,7 @@
 </head>
 
 
-<body class="custom-cursor">
+    <body class="custom-cursor">
 
     <div class="custom-cursor__cursor"></div>
     <div class="custom-cursor__cursor-two"></div>
@@ -185,6 +187,77 @@
     <script src="{{ asset('website_assets/js/gsap/ScrollTrigger.js') }}"></script>
     <script src="{{ asset('website_assets/js/gsap/SplitText.js') }}"></script>
     <script src="{{ asset('website_assets/js/script.js') }}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('img:not([loading])').forEach(function (img, index) {
+                if (index > 2) {
+                    img.loading = 'lazy';
+                }
+                img.decoding = 'async';
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const prefetched = new Set();
+
+            function shouldPrefetch(url) {
+                if (!url || prefetched.has(url)) {
+                    return false;
+                }
+
+                try {
+                    const parsed = new URL(url, window.location.origin);
+
+                    return parsed.origin === window.location.origin &&
+                        parsed.pathname !== window.location.pathname &&
+                        !parsed.hash &&
+                        !/\.(jpg|jpeg|png|gif|webp|svg|pdf|zip)$/i.test(parsed.pathname);
+                } catch (error) {
+                    return false;
+                }
+            }
+
+            function prefetch(url) {
+                if (!shouldPrefetch(url)) {
+                    return;
+                }
+
+                prefetched.add(url);
+
+                const link = document.createElement('link');
+                link.rel = 'prefetch';
+                link.as = 'document';
+                link.href = url;
+                document.head.appendChild(link);
+            }
+
+            document.querySelectorAll('a[href]').forEach(function (anchor) {
+                const url = anchor.href;
+
+                anchor.addEventListener('mouseenter', function () {
+                    prefetch(url);
+                }, { passive: true });
+
+                anchor.addEventListener('touchstart', function () {
+                    prefetch(url);
+                }, { passive: true });
+            });
+
+            const eagerLinks = [
+                ...document.querySelectorAll('.main-menu a[href]'),
+                ...document.querySelectorAll('.footer-widget-two__link a[href]')
+            ];
+
+            if ('requestIdleCallback' in window) {
+                requestIdleCallback(function () {
+                    eagerLinks.slice(0, 8).forEach(function (anchor) {
+                        prefetch(anchor.href);
+                    });
+                }, { timeout: 2000 });
+            }
+        });
+    </script>
 
 
     @stack('scripts')

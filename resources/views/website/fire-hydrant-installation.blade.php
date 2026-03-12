@@ -9,21 +9,21 @@
 @section('seo_author', 'Aroun Systems & Safety Equipments')
 @section('seo_image', asset('website_assets/images/fire-hydrant-installation-og.jpg'))
 @push('styles')
-    <link rel="stylesheet" href="website_assets/css/module-css/page-header.css" />
+    <link rel="stylesheet" href="{{ asset('website_assets/css/module-css/page-header.css') }}" />
 @endpush
 @section('content')
 
     <!--Page Header Start-->
     <section class="page-header">
-        <div class="page-header__bg" style="background-image: url(website_assets/images/backgrounds/page-header-bg.png);">
+        <div class="page-header__bg" style="background-image: url({{ asset('website_assets/images/backgrounds/page-header-bg.png') }});">
         </div>
         <div class="container">
             <div class="page-header__inner">
                 <div class="page-header__img-1">
-                    <img src="website_assets/images/resources/page-header-img-1.png" alt="">
+                    <img src="{{ asset('website_assets/images/resources/page-header-img-1.png') }}" alt="">
                 </div>
                 <div class="page-header__shape-1 float-bob-y">
-                    <img src="website_assets/images/shapes/page-header-shape-1.png" alt="">
+                    <img src="{{ asset('website_assets/images/shapes/page-header-shape-1.png') }}" alt="">
                 </div>
                 <h3>Fire Hydrant Installation</h3>
                 <div class="thm-breadcrumb__inner">
@@ -73,7 +73,7 @@
                 <div class="col-xl-8 col-lg-7">
                     <div class="service-details__left">
                         <div class="service-details__img">
-                            <img src="website_assets/images/services/fire-hydrant-installation.png" alt="">
+                            <img src="{{ asset('website_assets/images/services/fire-hydrant-installation.png') }}" alt="">
                         </div>
                         <h3 class="service-details__title-1">Fire Hydrant Installation Service</h3>
                         <p class="service-details__text-1">Aroun Systems provides professional fire hydrant installation
@@ -119,7 +119,7 @@
                                 <div class="col-xl-6">
                                     <div class="service-details__img-box-single">
                                         <div class="service-details__img-box-img">
-                                            <img src="website_assets/images/services/hydrant-quality-work.png"
+                                            <img src="{{ asset('website_assets/images/services/hydrant-quality-work.png') }}"
                                                 alt="">
                                         </div>
                                         <div class="service-details__img-box-content">
@@ -139,7 +139,7 @@
                                 <div class="col-xl-6">
                                     <div class="service-details__img-box-single">
                                         <div class="service-details__img-box-img">
-                                            <img src="website_assets/images/services/hydrant-maintenance.png"
+                                            <img src="{{ asset('website_assets/images/services/hydrant-maintenance.png') }}"
                                                 alt="">
                                         </div>
                                         <div class="service-details__img-box-content">
@@ -232,3 +232,4 @@
         </div>
     </section>
 @endsection
+

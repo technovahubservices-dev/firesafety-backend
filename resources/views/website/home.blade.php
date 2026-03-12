@@ -30,10 +30,10 @@
 
                 <div class="swiper-slide">
                     <div class="main-slider__pattern-bg"
-                        style="background-image: url(website_assets/images/shapes/main-slider-pattern.png);"></div>
+                        style="background-image: url({{ asset('website_assets/images/shapes/main-slider-pattern.png') }});"></div>
                     <div class="main-slider__bg-box">
                         <div class="main-slider__bg"
-                            style="background-image: url(website_assets/images/backgrounds/slider-1-1.png);"></div>
+                            style="background-image: url({{ asset('website_assets/images/backgrounds/slider-1-1.png') }});"></div>
                     </div>
                     <div class="main-slider__shape-1"></div>
                     <div class="main-slider__shape-2"></div>
@@ -55,7 +55,7 @@
                                         </a>
                                     </div>
                                     <div class="main-slider__map">
-                                        <img src="website_assets/images/shapes/main-slider-map-1.png" alt=""
+                                        <img src="{{ asset('website_assets/images/shapes/main-slider-map-1.png') }}" alt=""
                                             class="float-bob-y">
                                     </div>
                                 </div>
@@ -66,10 +66,10 @@
 
                 <div class="swiper-slide">
                     <div class="main-slider__pattern-bg"
-                        style="background-image: url(website_assets/images/shapes/main-slider-pattern.png);"></div>
+                        style="background-image: url({{ asset('website_assets/images/shapes/main-slider-pattern.png') }});"></div>
                     <div class="main-slider__bg-box">
                         <div class="main-slider__bg"
-                            style="background-image: url(website_assets/images/backgrounds/slider-1-2.png);"></div>
+                            style="background-image: url({{ asset('website_assets/images/backgrounds/slider-1-2.png') }});"></div>
                     </div>
                     <div class="main-slider__shape-1"></div>
                     <div class="main-slider__shape-2"></div>
@@ -90,7 +90,7 @@
                                         </a>
                                     </div>
                                     <div class="main-slider__map">
-                                        <img src="website_assets/images/shapes/main-slider-map-1.png" alt=""
+                                        <img src="{{ asset('website_assets/images/shapes/main-slider-map-1.png') }}" alt=""
                                             class="float-bob-y">
                                     </div>
                                 </div>
@@ -101,10 +101,10 @@
 
                 <div class="swiper-slide">
                     <div class="main-slider__pattern-bg"
-                        style="background-image: url(website_assets/images/shapes/main-slider-pattern.png);"></div>
+                        style="background-image: url({{ asset('website_assets/images/shapes/main-slider-pattern.png') }});"></div>
                     <div class="main-slider__bg-box">
                         <div class="main-slider__bg"
-                            style="background-image: url(website_assets/images/backgrounds/slider-1-3.png);"></div>
+                            style="background-image: url({{ asset('website_assets/images/backgrounds/slider-1-3.png') }});"></div>
                     </div>
                     <div class="main-slider__shape-1"></div>
                     <div class="main-slider__shape-2"></div>
@@ -126,7 +126,7 @@
                                         </a>
                                     </div>
                                     <div class="main-slider__map">
-                                        <img src="website_assets/images/shapes/main-slider-map-1.png" alt=""
+                                        <img src="{{ asset('website_assets/images/shapes/main-slider-map-1.png') }}" alt=""
                                             class="float-bob-y">
                                     </div>
                                 </div>
@@ -220,13 +220,13 @@
                     <div class="about-two__left wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
                         <div class="about-two__img-box">
                             <div class="about-two__img">
-                                <img src="website_assets/images/resources/about-two-img-1.png" alt="">
+                                <img src="{{ asset('website_assets/images/resources/about-two-img-1.png') }}" alt="">
                             </div>
                             <div class="about-two__img-two">
-                                <img src="website_assets/images/resources/about-two-img-2.png" alt="">
+                                <img src="{{ asset('website_assets/images/resources/about-two-img-2.png') }}" alt="">
                             </div>
                             <div class="about-two__counter">
-                                <div class="shape1"><img src="website_assets/images/shapes/about-two-shape-1.png"
+                                <div class="shape1"><img src="{{ asset('website_assets/images/shapes/about-two-shape-1.png') }}"
                                         alt="">
                                 </div>
                                 <div class="count-text-box count-box">
@@ -237,13 +237,13 @@
                                     Completed</p>
                             </div>
                             <div class="about-two__shape-2 float-bob-x">
-                                <img src="website_assets/images/shapes/about-two-shape-2.png" alt="">
+                                <img src="{{ asset('website_assets/images/shapes/about-two-shape-2.png') }}" alt="">
                             </div>
                             <div class="about-two__shape-3">
-                                <img src="website_assets/images/shapes/about-two-shape-3.png" alt="">
+                                <img src="{{ asset('website_assets/images/shapes/about-two-shape-3.png') }}" alt="">
                             </div>
                             <div class="about-two__shape-4 float-bob-y">
-                                <img src="website_assets/images/shapes/about-two-shape-4.png" alt="">
+                                <img src="{{ asset('website_assets/images/shapes/about-two-shape-4.png') }}" alt="">
                             </div>
                         </div>
                     </div>
@@ -352,7 +352,7 @@
                                 <div class="about-two__author-details">
                                     <div class="about-two__author-img-box">
                                         <div class="about-two__author-img">
-                                            <img src="website_assets/images/resources/about-one-author-img-1.jpg"
+                                            <img src="{{ asset('website_assets/images/resources/about-one-author-img-1.jpg') }}"
                                                 alt="">
                                         </div>
                                     </div>
@@ -432,13 +432,13 @@
     <!--Why Choose Two Start-->
     <section class="why-choose-two">
         <div class="why-choose-two__pattern"
-            style="background-image: url(website_assets/images/shapes/why-choose-two-pattern.png);"></div>
+            style="background-image: url({{ asset('website_assets/images/shapes/why-choose-two-pattern.png') }});"></div>
         <div class="why-choose-two__bg-box">
             <div class="why-choose-two__shape-bg"
-                style="background-image: url(website_assets/images/shapes/why-choose-two-shpae-bg.png);"></div>
+                style="background-image: url({{ asset('website_assets/images/shapes/why-choose-two-shpae-bg.png') }});"></div>
         </div>
         <div class="why-choose-two__img reveal">
-            <img src="website_assets/images/resources/why-choose-two-img-1.png" alt="">
+            <img src="{{ asset('website_assets/images/resources/why-choose-two-img-1.png') }}" alt="">
         </div>
 
         <div class="container">
@@ -525,18 +525,18 @@
         <div class="container">
             <div class="cta-one__inner">
                 <div class="cta-one__img">
-                    <img src="website_assets/images/resources/cta-one-img-1.png" alt="">
+                    <img src="{{ asset('website_assets/images/resources/cta-one-img-1.png') }}" alt="">
                 </div>
                 <div class="cta-one__content">
                     <div class="cta-one__shape-1"
-                        style="background-image: url(website_assets/images/shapes/cta-one-shape-1.png);"></div>
+                        style="background-image: url({{ asset('website_assets/images/shapes/cta-one-shape-1.png') }});"></div>
                     <div class="cta-one__shape-bg"
-                        style="background-image: url(website_assets/images/shapes/cta-one-shape-bg.png);"></div>
+                        style="background-image: url({{ asset('website_assets/images/shapes/cta-one-shape-bg.png') }});"></div>
                     <div class="cta-one__shape-2 float-bob-y">
-                        <img src="website_assets/images/shapes/cta-one-shape-2.png" alt="">
+                        <img src="{{ asset('website_assets/images/shapes/cta-one-shape-2.png') }}" alt="">
                     </div>
                     <div class="cta-one__shape-3 float-bob-x">
-                        <img src="website_assets/images/shapes/cta-one-shape-3.png" alt="">
+                        <img src="{{ asset('website_assets/images/shapes/cta-one-shape-3.png') }}" alt="">
                     </div>
                     <h2>Recognized as One of The <br> Leading <span>Safety Company!</span></h2>
                     <p>Fire safety provider company plays a pivotal <br>
@@ -587,7 +587,7 @@
                         <div class="project-one__single">
                             <div class="project-one__img-box">
                                 <div class="project-one__img">
-                                    <img src="website_assets/images/project/1.png" alt="">
+                                    <img src="{{ asset('website_assets/images/project/1.png') }}" alt="">
                                 </div>
                                 <div class="project-one__content">
                                     <div class="project-one__title-box">
@@ -596,7 +596,7 @@
                                                 Systems</a></h3>
                                     </div>
                                     <div class="project-one__arrow">
-                                        <a href="website_assets/images/project/1.png" class="img-popup"><span
+                                        <a href="{{ asset('website_assets/images/project/1.png') }}" class="img-popup"><span
                                                 class="icon-right-arrow"></span></a>
                                     </div>
                                 </div>
@@ -609,7 +609,7 @@
                         <div class="project-one__single">
                             <div class="project-one__img-box">
                                 <div class="project-one__img">
-                                    <img src="website_assets/images/project/2.png" alt="">
+                                    <img src="{{ asset('website_assets/images/project/2.png') }}" alt="">
                                 </div>
                                 <div class="project-one__content">
                                     <div class="project-one__title-box">
@@ -618,7 +618,7 @@
                                                 Extinguishers</a></h3>
                                     </div>
                                     <div class="project-one__arrow">
-                                        <a href="website_assets/images/project/2.png" class="img-popup"><span
+                                        <a href="{{ asset('website_assets/images/project/2.png') }}" class="img-popup"><span
                                                 class="icon-right-arrow"></span></a>
                                     </div>
                                 </div>
@@ -631,7 +631,7 @@
                         <div class="project-one__single">
                             <div class="project-one__img-box">
                                 <div class="project-one__img">
-                                    <img src="website_assets/images/project/3.png" alt="">
+                                    <img src="{{ asset('website_assets/images/project/3.png') }}" alt="">
                                 </div>
                                 <div class="project-one__content">
                                     <div class="project-one__title-box">
@@ -640,7 +640,7 @@
                                                 Systems</a></h3>
                                     </div>
                                     <div class="project-one__arrow">
-                                        <a href="website_assets/images/project/3.png" class="img-popup"><span
+                                        <a href="{{ asset('website_assets/images/project/3.png') }}" class="img-popup"><span
                                                 class="icon-right-arrow"></span></a>
                                     </div>
                                 </div>
@@ -653,7 +653,7 @@
                         <div class="project-one__single">
                             <div class="project-one__img-box">
                                 <div class="project-one__img">
-                                    <img src="website_assets/images/project/4.png" alt="">
+                                    <img src="{{ asset('website_assets/images/project/4.png') }}" alt="">
                                 </div>
                                 <div class="project-one__content">
                                     <div class="project-one__title-box">
@@ -662,7 +662,7 @@
                                         </h3>
                                     </div>
                                     <div class="project-one__arrow">
-                                        <a href="website_assets/images/project/4.png" class="img-popup"><span
+                                        <a href="{{ asset('website_assets/images/project/4.png') }}" class="img-popup"><span
                                                 class="icon-right-arrow"></span></a>
                                     </div>
                                 </div>
@@ -675,7 +675,7 @@
                         <div class="project-one__single">
                             <div class="project-one__img-box">
                                 <div class="project-one__img">
-                                    <img src="website_assets/images/project/1.png" alt="">
+                                    <img src="{{ asset('website_assets/images/project/1.png') }}" alt="">
                                 </div>
                                 <div class="project-one__content">
                                     <div class="project-one__title-box">
@@ -684,7 +684,7 @@
                                         </h3>
                                     </div>
                                     <div class="project-one__arrow">
-                                        <a href="website_assets/images/project/1.png" class="img-popup"><span
+                                        <a href="{{ asset('website_assets/images/project/1.png') }}" class="img-popup"><span
                                                 class="icon-right-arrow"></span></a>
                                     </div>
                                 </div>
@@ -697,7 +697,7 @@
                         <div class="project-one__single">
                             <div class="project-one__img-box">
                                 <div class="project-one__img">
-                                    <img src="website_assets/images/project/2.png" alt="">
+                                    <img src="{{ asset('website_assets/images/project/2.png') }}" alt="">
                                 </div>
                                 <div class="project-one__content">
                                     <div class="project-one__title-box">
@@ -706,7 +706,7 @@
                                                 Refilling</a></h3>
                                     </div>
                                     <div class="project-one__arrow">
-                                        <a href="website_assets/images/project/2.png" class="img-popup"><span
+                                        <a href="{{ asset('website_assets/images/project/2.png') }}" class="img-popup"><span
                                                 class="icon-right-arrow"></span></a>
                                     </div>
                                 </div>
@@ -719,7 +719,7 @@
                         <div class="project-one__single">
                             <div class="project-one__img-box">
                                 <div class="project-one__img">
-                                    <img src="website_assets/images/project/3.png" alt="">
+                                    <img src="{{ asset('website_assets/images/project/3.png') }}" alt="">
                                 </div>
                                 <div class="project-one__content">
                                     <div class="project-one__title-box">
@@ -728,7 +728,7 @@
                                                 Systems</a></h3>
                                     </div>
                                     <div class="project-one__arrow">
-                                        <a href="website_assets/images/project/3.png" class="img-popup"><span
+                                        <a href="{{ asset('website_assets/images/project/3.png') }}" class="img-popup"><span
                                                 class="icon-right-arrow"></span></a>
                                     </div>
                                 </div>
@@ -741,7 +741,7 @@
                         <div class="project-one__single">
                             <div class="project-one__img-box">
                                 <div class="project-one__img">
-                                    <img src="website_assets/images/project/4.png" alt="">
+                                    <img src="{{ asset('website_assets/images/project/4.png') }}" alt="">
                                 </div>
                                 <div class="project-one__content">
                                     <div class="project-one__title-box">
@@ -750,7 +750,7 @@
                                                 Systems</a></h3>
                                     </div>
                                     <div class="project-one__arrow">
-                                        <a href="website_assets/images/project/4.png" class="img-popup"><span
+                                        <a href="{{ asset('website_assets/images/project/4.png') }}" class="img-popup"><span
                                                 class="icon-right-arrow"></span></a>
                                     </div>
                                 </div>
@@ -842,7 +842,7 @@
     <!--Find Transport Start -->
     <section class="find-transport">
         <div class="find-transport__shape-bg"
-            style="background-image: url(website_assets/images/shapes/find-transport-shape-bg.png);"></div>
+            style="background-image: url({{ asset('website_assets/images/shapes/find-transport-shape-bg.png') }});"></div>
         <div class="container">
             <div class="find-transport__inner">
                 <div class="find-transport__title-box">
@@ -875,9 +875,9 @@
         <div class="container">
             <div class="video-two__inner">
                 <div class="video-two__inner-bg jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%"
-                    style="background-image: url(website_assets/images/backgrounds/video-two-bg.png);"></div>
+                    style="background-image: url({{ asset('website_assets/images/backgrounds/video-two-bg.png') }});"></div>
                 <div class="video-two__shape-1">
-                    <img src="website_assets/images/shapes/video-two-shape-1.png" alt="">
+                    <img src="{{ asset('website_assets/images/shapes/video-two-shape-1.png') }}" alt="">
                 </div>
                 <h3 class="video-two__title">We Are The Leader in
                     <br> Fire Safety Solutions
@@ -922,7 +922,7 @@
                         <div class="testimonial-two__single">
                             <div class="testimonial-two__single-inner">
                                 <div class="testimonial-two__shape-1">
-                                    <img src="website_assets/images/shapes/user.png" alt="">
+                                    <img src="{{ asset('website_assets/images/shapes/user.png') }}" alt="">
                                 </div>
                                 <div class="testimonial-two__quote">
                                     <i class="fas fa-quote-left"></i>
@@ -939,7 +939,7 @@
                                     excellent safety standards for our industrial facility.</p>
                                 <div class="testimonial-two__client-info">
                                     <div class="testimonial-two__client-img">
-                                        <img src="website_assets/images/testimonial/user.png" alt="">
+                                        <img src="{{ asset('website_assets/images/testimonial/user.png') }}" alt="">
                                     </div>
                                     <div class="testimonial-two__client-content">
                                         <h3><a href="#!">Rajesh Kumar</a></h3>
@@ -955,7 +955,7 @@
                         <div class="testimonial-two__single">
                             <div class="testimonial-two__single-inner">
                                 <div class="testimonial-two__shape-1">
-                                    <img src="website_assets/images/shapes/user.png" alt="">
+                                    <img src="{{ asset('website_assets/images/shapes/user.png') }}" alt="">
                                 </div>
                                 <div class="testimonial-two__quote">
                                     <i class="fas fa-quote-left"></i>
@@ -972,7 +972,7 @@
                                     mind for our commercial building safety.</p>
                                 <div class="testimonial-two__client-info">
                                     <div class="testimonial-two__client-img">
-                                        <img src="website_assets/images/testimonial/user.png" alt="">
+                                        <img src="{{ asset('website_assets/images/testimonial/user.png') }}" alt="">
                                     </div>
                                     <div class="testimonial-two__client-content">
                                         <h3><a href="#!">Priya Sharma</a></h3>
@@ -988,7 +988,7 @@
                         <div class="testimonial-two__single">
                             <div class="testimonial-two__single-inner">
                                 <div class="testimonial-two__shape-1">
-                                    <img src="website_assets/images/shapes/user.png" alt="">
+                                    <img src="{{ asset('website_assets/images/shapes/user.png') }}" alt="">
                                 </div>
                                 <div class="testimonial-two__quote">
                                     <i class="fas fa-quote-left"></i>
@@ -1005,7 +1005,7 @@
                                     service is prompt and professional.</p>
                                 <div class="testimonial-two__client-info">
                                     <div class="testimonial-two__client-img">
-                                        <img src="website_assets/images/testimonial/user.png" alt="">
+                                        <img src="{{ asset('website_assets/images/testimonial/user.png') }}" alt="">
                                     </div>
                                     <div class="testimonial-two__client-content">
                                         <h3><a href="#!">Arun Patel</a></h3>
@@ -1021,7 +1021,7 @@
                         <div class="testimonial-two__single">
                             <div class="testimonial-two__single-inner">
                                 <div class="testimonial-two__shape-1">
-                                    <img src="website_assets/images/shapes/user.png" alt="">
+                                    <img src="{{ asset('website_assets/images/shapes/user.png') }}" alt="">
                                 </div>
                                 <div class="testimonial-two__quote">
                                     <i class="fas fa-quote-left"></i>
@@ -1038,7 +1038,7 @@
                                     work operations.</p>
                                 <div class="testimonial-two__client-info">
                                     <div class="testimonial-two__client-img">
-                                        <img src="website_assets/images/testimonial/user.png" alt="">
+                                        <img src="{{ asset('website_assets/images/testimonial/user.png') }}" alt="">
                                     </div>
                                     <div class="testimonial-two__client-content">
                                         <h3><a href="#!">Suresh Reddy</a></h3>
@@ -1054,7 +1054,7 @@
                         <div class="testimonial-two__single">
                             <div class="testimonial-two__single-inner">
                                 <div class="testimonial-two__shape-1">
-                                    <img src="website_assets/images/shapes/user.png" alt="">
+                                    <img src="{{ asset('website_assets/images/shapes/user.png') }}" alt="">
                                 </div>
                                 <div class="testimonial-two__quote">
                                     <i class="fas fa-quote-left"></i>
@@ -1071,7 +1071,7 @@
                                     partner across locations.</p>
                                 <div class="testimonial-two__client-info">
                                     <div class="testimonial-two__client-img">
-                                        <img src="website_assets/images/testimonial/user.png" alt="">
+                                        <img src="{{ asset('website_assets/images/testimonial/user.png') }}" alt="">
                                     </div>
                                     <div class="testimonial-two__client-content">
                                         <h3><a href="#!">Meena Iyer</a></h3>
@@ -1087,7 +1087,7 @@
                         <div class="testimonial-two__single">
                             <div class="testimonial-two__single-inner">
                                 <div class="testimonial-two__shape-1">
-                                    <img src="website_assets/images/shapes/user.png" alt="">
+                                    <img src="{{ asset('website_assets/images/shapes/user.png') }}" alt="">
                                 </div>
                                 <div class="testimonial-two__quote">
                                     <i class="fas fa-quote-left"></i>
@@ -1104,7 +1104,7 @@
                                     entire workforce.</p>
                                 <div class="testimonial-two__client-info">
                                     <div class="testimonial-two__client-img">
-                                        <img src="website_assets/images/testimonial/user.png" alt="">
+                                        <img src="{{ asset('website_assets/images/testimonial/user.png') }}" alt="">
                                     </div>
                                     <div class="testimonial-two__client-content">
                                         <h3><a href="#!">Vikram Singh</a></h3>
@@ -1207,7 +1207,7 @@
                 <!--Start Brand One Single-->
                 <div class="brand-one__single">
                     <div class="brand-one__single-inner">
-                        <a href="#"><img src="website_assets/images/brand/1.png" alt=""></a>
+                        <a href="#"><img src="{{ asset('website_assets/images/brand/1.png') }}" alt=""></a>
                     </div>
                 </div>
                 <!--End Brand One Single-->
@@ -1215,7 +1215,7 @@
                 <!--Start Brand One Single-->
                 <div class="brand-one__single">
                     <div class="brand-one__single-inner">
-                        <a href="#"><img src="website_assets/images/brand/2.png" alt=""></a>
+                        <a href="#"><img src="{{ asset('website_assets/images/brand/2.png') }}" alt=""></a>
                     </div>
                 </div>
                 <!--End Brand One Single-->
@@ -1223,7 +1223,7 @@
                 <!--Start Brand One Single-->
                 <div class="brand-one__single">
                     <div class="brand-one__single-inner">
-                        <a href="#"><img src="website_assets/images/brand/3.png" alt=""></a>
+                        <a href="#"><img src="{{ asset('website_assets/images/brand/3.png') }}" alt=""></a>
                     </div>
                 </div>
                 <!--End Brand One Single-->
@@ -1231,7 +1231,7 @@
                 <!--Start Brand One Single-->
                 <div class="brand-one__single">
                     <div class="brand-one__single-inner">
-                        <a href="#"><img src="website_assets/images/brand/4.png" alt=""></a>
+                        <a href="#"><img src="{{ asset('website_assets/images/brand/4.png') }}" alt=""></a>
                     </div>
                 </div>
                 <!--End Brand One Single-->
@@ -1239,7 +1239,7 @@
                 <!--Start Brand One Single-->
                 <div class="brand-one__single">
                     <div class="brand-one__single-inner">
-                        <a href="#"><img src="website_assets/images/brand/5.png" alt=""></a>
+                        <a href="#"><img src="{{ asset('website_assets/images/brand/5.png') }}" alt=""></a>
                     </div>
                 </div>
                 <!--End Brand One Single-->
@@ -1247,22 +1247,22 @@
                 <!--Start Brand One Single-->
                 <div class="brand-one__single">
                     <div class="brand-one__single-inner">
-                        <a href="#"><img src="website_assets/images/brand/6.png" alt=""></a>
+                        <a href="#"><img src="{{ asset('website_assets/images/brand/6.png') }}" alt=""></a>
                     </div>
                 </div>
                 <div class="brand-one__single">
                     <div class="brand-one__single-inner">
-                        <a href="#"><img src="website_assets/images/brand/7.png" alt=""></a>
+                        <a href="#"><img src="{{ asset('website_assets/images/brand/7.png') }}" alt=""></a>
                     </div>
                 </div>
                 <div class="brand-one__single">
                     <div class="brand-one__single-inner">
-                        <a href="#"><img src="website_assets/images/brand/8.png" alt=""></a>
+                        <a href="#"><img src="{{ asset('website_assets/images/brand/8.png') }}" alt=""></a>
                     </div>
                 </div>
                 <div class="brand-one__single">
                     <div class="brand-one__single-inner">
-                        <a href="#"><img src="website_assets/images/brand/9.png" alt=""></a>
+                        <a href="#"><img src="{{ asset('website_assets/images/brand/9.png') }}" alt=""></a>
                     </div>
                 </div>
                 <!--End Brand One Single-->
@@ -1270,3 +1270,4 @@
         </div>
     </section>
 @endsection
+

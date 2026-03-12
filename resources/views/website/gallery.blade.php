@@ -9,9 +9,9 @@
 @section('seo_author', 'Aroun Systems & Safety Equipments')
 @section('seo_image', asset('website_assets/images/aroun-systems-gallery-og.jpg'))
 @push('styles')
-    <link rel="stylesheet" href="website_assets/css/module-css/page-header.css" />
-    <link rel="stylesheet" href="website_assets/css/module-css/shop.css" />
-    <link rel="stylesheet" href="website_assets/css/module-css/error.css" />
+    <link rel="stylesheet" href="{{ asset('website_assets/css/module-css/page-header.css') }}" />
+    <link rel="stylesheet" href="{{ asset('website_assets/css/module-css/shop.css') }}" />
+    <link rel="stylesheet" href="{{ asset('website_assets/css/module-css/error.css') }}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -183,15 +183,15 @@
 @endpush
 @section('content')
     <section class="page-header">
-        <div class="page-header__bg" style="background-image: url(website_assets/images/backgrounds/page-header-bg.png);">
+        <div class="page-header__bg" style="background-image: url({{ asset('website_assets/images/backgrounds/page-header-bg.png') }});">
         </div>
         <div class="container">
             <div class="page-header__inner">
                 <div class="page-header__img-1">
-                    <img src="website_assets/images/resources/page-header-img-1.png" alt="">
+                    <img src="{{ asset('website_assets/images/resources/page-header-img-1.png') }}" alt="">
                 </div>
                 <div class="page-header__shape-1 float-bob-y">
-                    <img src="website_assets/images/shapes/page-header-shape-1.png" alt="">
+                    <img src="{{ asset('website_assets/images/shapes/page-header-shape-1.png') }}" alt="">
                 </div>
                 <h3>Gallery</h3>
                 <div class="thm-breadcrumb__inner">
@@ -306,3 +306,4 @@
         });
     </script>
 @endpush
+

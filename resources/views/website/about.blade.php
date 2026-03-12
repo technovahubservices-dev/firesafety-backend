@@ -9,7 +9,7 @@
 @section('seo_author', 'Aroun Systems & Safety Equipments')
 @section('seo_image', asset('website_assets/images/aroun-systems-about-og.jpg'))
 @push('styles')
-    <link rel="stylesheet" href="website_assets/css/module-css/page-header.css" />
+    <link rel="stylesheet" href="{{ asset('website_assets/css/module-css/page-header.css') }}" />
 @endpush
 @section('content')
 
@@ -17,15 +17,15 @@
 
     <!--Page Header Start-->
     <section class="page-header">
-        <div class="page-header__bg" style="background-image: url(website_assets/images/backgrounds/page-header-bg.png);">
+        <div class="page-header__bg" style="background-image: url({{ asset('website_assets/images/backgrounds/page-header-bg.png') }});">
         </div>
         <div class="container">
             <div class="page-header__inner">
                 <div class="page-header__img-1">
-                    <img src="website_assets/images/resources/page-header-img-1.png" alt="">
+                    <img src="{{ asset('website_assets/images/resources/page-header-img-1.png') }}" alt="">
                 </div>
                 <div class="page-header__shape-1 float-bob-y">
-                    <img src="website_assets/images/shapes/page-header-shape-1.png" alt="">
+                    <img src="{{ asset('website_assets/images/shapes/page-header-shape-1.png') }}" alt="">
                 </div>
                 <h3>About Us</h3>
                 <div class="thm-breadcrumb__inner">
@@ -48,13 +48,13 @@
                     <div class="about-two__left wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
                         <div class="about-two__img-box">
                             <div class="about-two__img">
-                                <img src="website_assets/images/resources/about-two-img-1.png" alt="">
+                                <img src="{{ asset('website_assets/images/resources/about-two-img-1.png') }}" alt="">
                             </div>
                             <div class="about-two__img-two">
-                                <img src="website_assets/images/resources/about-two-img-2.png" alt="">
+                                <img src="{{ asset('website_assets/images/resources/about-two-img-2.png') }}" alt="">
                             </div>
                             <div class="about-two__counter">
-                                <div class="shape1"><img src="website_assets/images/shapes/about-two-shape-1.png"
+                                <div class="shape1"><img src="{{ asset('website_assets/images/shapes/about-two-shape-1.png') }}"
                                         alt="">
                                 </div>
                                 <div class="count-text-box count-box">
@@ -66,13 +66,13 @@
                                     Completed</p>
                             </div>
                             <div class="about-two__shape-2 float-bob-x">
-                                <img src="website_assets/images/shapes/about-two-shape-2.png" alt="">
+                                <img src="{{ asset('website_assets/images/shapes/about-two-shape-2.png') }}" alt="">
                             </div>
                             <div class="about-two__shape-3">
-                                <img src="website_assets/images/shapes/about-two-shape-3.png" alt="">
+                                <img src="{{ asset('website_assets/images/shapes/about-two-shape-3.png') }}" alt="">
                             </div>
                             <div class="about-two__shape-4 float-bob-y">
-                                <img src="website_assets/images/shapes/about-two-shape-4.png" alt="">
+                                <img src="{{ asset('website_assets/images/shapes/about-two-shape-4.png') }}" alt="">
                             </div>
                         </div>
                     </div>
@@ -181,7 +181,7 @@
                                 <div class="about-two__author-details">
                                     <div class="about-two__author-img-box">
                                         <div class="about-two__author-img">
-                                            <img src="website_assets/images/resources/about-one-author-img-1.jpg"
+                                            <img src="{{ asset('website_assets/images/resources/about-one-author-img-1.jpg') }}"
                                                 alt="">
                                         </div>
                                     </div>
@@ -213,27 +213,27 @@
             <ul class="sliding-text__list list-unstyled marquee_mode">
                 <li>
                     <h2 data-hover="ISO 9001:2015 CERTIFIED" class="sliding-text__title">ISO 9001:2015 CERTIFIED
-                        <img src="website_assets/images/icon/sliding-text-icon-1.png" alt="">
+                        <img src="{{ asset('website_assets/images/icon/sliding-text-icon-1.png') }}" alt="">
                     </h2>
                 </li>
                 <li>
                     <h2 data-hover="FIRE HYDRANT SYSTEMS" class="sliding-text__title">FIRE HYDRANT SYSTEMS
-                        <img src="website_assets/images/icon/sliding-text-icon-1.png" alt="">
+                        <img src="{{ asset('website_assets/images/icon/sliding-text-icon-1.png') }}" alt="">
                     </h2>
                 </li>
                 <li>
                     <h2 data-hover="FIRE EXTINGUISHERS" class="sliding-text__title">FIRE EXTINGUISHERS
-                        <img src="website_assets/images/icon/sliding-text-icon-1.png" alt="">
+                        <img src="{{ asset('website_assets/images/icon/sliding-text-icon-1.png') }}" alt="">
                     </h2>
                 </li>
                 <li>
                     <h2 data-hover="SAFETY EQUIPMENT" class="sliding-text__title">SAFETY EQUIPMENT
-                        <img src="website_assets/images/icon/sliding-text-icon-1.png" alt="">
+                        <img src="{{ asset('website_assets/images/icon/sliding-text-icon-1.png') }}" alt="">
                     </h2>
                 </li>
                 <li>
                     <h2 data-hover="24/7 EMERGENCY SERVICE" class="sliding-text__title">24/7 EMERGENCY SERVICE
-                        <img src="website_assets/images/icon/sliding-text-icon-1.png" alt="">
+                        <img src="{{ asset('website_assets/images/icon/sliding-text-icon-1.png') }}" alt="">
                     </h2>
                 </li>
             </ul>
@@ -266,7 +266,7 @@
                     <div class="services-one__single">
                         <div class="services-one__img-box">
                             <div class="services-one__img">
-                                <img src="website_assets/images/services/1.png" alt="">
+                                <img src="{{ asset('website_assets/images/services/1.png') }}" alt="">
                             </div>
                             <div class="services-one__icon">
                                 <span class="icon-worldwide-shipping"></span>
@@ -292,7 +292,7 @@
                     <div class="services-one__single">
                         <div class="services-one__img-box">
                             <div class="services-one__img">
-                                <img src="website_assets/images/services/2.png" alt="">
+                                <img src="{{ asset('website_assets/images/services/2.png') }}" alt="">
                             </div>
                             <div class="services-one__icon">
                                 <span class="icon-shipment"></span>
@@ -318,7 +318,7 @@
                     <div class="services-one__single">
                         <div class="services-one__img-box">
                             <div class="services-one__img">
-                                <img src="website_assets/images/services/4.png" alt="">
+                                <img src="{{ asset('website_assets/images/services/4.png') }}" alt="">
                             </div>
                             <div class="services-one__icon">
                                 <span class="icon-delivery-man"></span>
@@ -347,7 +347,7 @@
                     <div class="services-one__single">
                         <div class="services-one__img-box">
                             <div class="services-one__img">
-                                <img src="website_assets/images/services/3.png" alt="">
+                                <img src="{{ asset('website_assets/images/services/3.png') }}" alt="">
                             </div>
                             <div class="services-one__icon">
                                 <span class="icon-truck"></span>
@@ -379,7 +379,7 @@
     <!--Find Transport Start -->
     <section class="find-transport">
         <div class="find-transport__shape-bg"
-            style="background-image: url(website_assets/images/shapes/find-transport-shape-bg.png);"></div>
+            style="background-image: url({{ asset('website_assets/images/shapes/find-transport-shape-bg.png') }});"></div>
         <div class="container">
             <div class="find-transport__inner">
                 <div class="find-transport__title-box">
@@ -434,7 +434,7 @@
                         <div class="testimonial-two__single">
                             <div class="testimonial-two__single-inner">
                                 <div class="testimonial-two__shape-1">
-                                    <img src="website_assets/images/shapes/testimonial-two-shape-1.png" alt="">
+                                    <img src="{{ asset('website_assets/images/shapes/testimonial-two-shape-1.png') }}" alt="">
                                 </div>
                                 <div class="testimonial-two__quote">
                                     <i class="fas fa-quote-left"></i>
@@ -451,7 +451,7 @@
                                     excellent safety standards for our industrial facility.</p>
                                 <div class="testimonial-two__client-info">
                                     <div class="testimonial-two__client-img">
-                                        <img src="website_assets/images/testimonial/user.png" alt="">
+                                        <img src="{{ asset('website_assets/images/testimonial/user.png') }}" alt="">
                                     </div>
                                     <div class="testimonial-two__client-content">
                                         <h3><a href="#!">Rajesh Kumar</a></h3>
@@ -466,7 +466,7 @@
                         <div class="testimonial-two__single">
                             <div class="testimonial-two__single-inner">
                                 <div class="testimonial-two__shape-1">
-                                    <img src="website_assets/images/shapes/testimonial-two-shape-1.png" alt="">
+                                    <img src="{{ asset('website_assets/images/shapes/testimonial-two-shape-1.png') }}" alt="">
                                 </div>
                                 <div class="testimonial-two__quote">
                                     <i class="fas fa-quote-left"></i>
@@ -483,7 +483,7 @@
                                     mind for our commercial building safety.</p>
                                 <div class="testimonial-two__client-info">
                                     <div class="testimonial-two__client-img">
-                                        <img src="website_assets/images/testimonial/user.png" alt="">
+                                        <img src="{{ asset('website_assets/images/testimonial/user.png') }}" alt="">
                                     </div>
                                     <div class="testimonial-two__client-content">
                                         <h3><a href="#!">Priya Sharma</a></h3>
@@ -498,7 +498,7 @@
                         <div class="testimonial-two__single">
                             <div class="testimonial-two__single-inner">
                                 <div class="testimonial-two__shape-1">
-                                    <img src="website_assets/images/shapes/testimonial-two-shape-1.png" alt="">
+                                    <img src="{{ asset('website_assets/images/shapes/testimonial-two-shape-1.png') }}" alt="">
                                 </div>
                                 <div class="testimonial-two__quote">
                                     <i class="fas fa-quote-left"></i>
@@ -515,7 +515,7 @@
                                     service is prompt and professional.</p>
                                 <div class="testimonial-two__client-info">
                                     <div class="testimonial-two__client-img">
-                                        <img src="website_assets/images/testimonial/user.png" alt="">
+                                        <img src="{{ asset('website_assets/images/testimonial/user.png') }}" alt="">
                                     </div>
                                     <div class="testimonial-two__client-content">
                                         <h3><a href="#!">Arun Patel</a></h3>
@@ -530,7 +530,7 @@
                         <div class="testimonial-two__single">
                             <div class="testimonial-two__single-inner">
                                 <div class="testimonial-two__shape-1">
-                                    <img src="website_assets/images/shapes/testimonial-two-shape-1.png" alt="">
+                                    <img src="{{ asset('website_assets/images/shapes/testimonial-two-shape-1.png') }}" alt="">
                                 </div>
                                 <div class="testimonial-two__quote">
                                     <i class="fas fa-quote-left"></i>
@@ -547,7 +547,7 @@
                                     work operations.</p>
                                 <div class="testimonial-two__client-info">
                                     <div class="testimonial-two__client-img">
-                                        <img src="website_assets/images/testimonial/user.png" alt="">
+                                        <img src="{{ asset('website_assets/images/testimonial/user.png') }}" alt="">
                                     </div>
                                     <div class="testimonial-two__client-content">
                                         <h3><a href="#!">Suresh Reddy</a></h3>
@@ -562,7 +562,7 @@
                         <div class="testimonial-two__single">
                             <div class="testimonial-two__single-inner">
                                 <div class="testimonial-two__shape-1">
-                                    <img src="website_assets/images/shapes/testimonial-two-shape-1.png" alt="">
+                                    <img src="{{ asset('website_assets/images/shapes/testimonial-two-shape-1.png') }}" alt="">
                                 </div>
                                 <div class="testimonial-two__quote">
                                     <i class="fas fa-quote-left"></i>
@@ -579,7 +579,7 @@
                                     partner across locations.</p>
                                 <div class="testimonial-two__client-info">
                                     <div class="testimonial-two__client-img">
-                                        <img src="website_assets/images/testimonial/user.png" alt="">
+                                        <img src="{{ asset('website_assets/images/testimonial/user.png') }}" alt="">
                                     </div>
                                     <div class="testimonial-two__client-content">
                                         <h3><a href="#!">Meena Iyer</a></h3>
@@ -594,7 +594,7 @@
                         <div class="testimonial-two__single">
                             <div class="testimonial-two__single-inner">
                                 <div class="testimonial-two__shape-1">
-                                    <img src="website_assets/images/shapes/testimonial-two-shape-1.png" alt="">
+                                    <img src="{{ asset('website_assets/images/shapes/testimonial-two-shape-1.png') }}" alt="">
                                 </div>
                                 <div class="testimonial-two__quote">
                                     <i class="fas fa-quote-left"></i>
@@ -611,7 +611,7 @@
                                     entire workforce.</p>
                                 <div class="testimonial-two__client-info">
                                     <div class="testimonial-two__client-img">
-                                        <img src="website_assets/images/testimonial/user.png" alt="">
+                                        <img src="{{ asset('website_assets/images/testimonial/user.png') }}" alt="">
                                     </div>
                                     <div class="testimonial-two__client-content">
                                         <h3><a href="#!">Vikram Singh</a></h3>
@@ -640,7 +640,7 @@
                 <!--Start Brand One Single-->
                 <div class="brand-one__single">
                     <div class="brand-one__single-inner">
-                        <a href="#"><img src="website_assets/images/brand/1.png" alt=""></a>
+                        <a href="#"><img src="{{ asset('website_assets/images/brand/1.png') }}" alt=""></a>
                     </div>
                 </div>
                 <!--End Brand One Single-->
@@ -648,7 +648,7 @@
                 <!--Start Brand One Single-->
                 <div class="brand-one__single">
                     <div class="brand-one__single-inner">
-                        <a href="#"><img src="website_assets/images/brand/2.png" alt=""></a>
+                        <a href="#"><img src="{{ asset('website_assets/images/brand/2.png') }}" alt=""></a>
                     </div>
                 </div>
                 <!--End Brand One Single-->
@@ -656,7 +656,7 @@
                 <!--Start Brand One Single-->
                 <div class="brand-one__single">
                     <div class="brand-one__single-inner">
-                        <a href="#"><img src="website_assets/images/brand/3.png" alt=""></a>
+                        <a href="#"><img src="{{ asset('website_assets/images/brand/3.png') }}" alt=""></a>
                     </div>
                 </div>
                 <!--End Brand One Single-->
@@ -664,7 +664,7 @@
                 <!--Start Brand One Single-->
                 <div class="brand-one__single">
                     <div class="brand-one__single-inner">
-                        <a href="#"><img src="website_assets/images/brand/4.png" alt=""></a>
+                        <a href="#"><img src="{{ asset('website_assets/images/brand/4.png') }}" alt=""></a>
                     </div>
                 </div>
                 <!--End Brand One Single-->
@@ -672,7 +672,7 @@
                 <!--Start Brand One Single-->
                 <div class="brand-one__single">
                     <div class="brand-one__single-inner">
-                        <a href="#"><img src="website_assets/images/brand/5.png" alt=""></a>
+                        <a href="#"><img src="{{ asset('website_assets/images/brand/5.png') }}" alt=""></a>
                     </div>
                 </div>
                 <!--End Brand One Single-->
@@ -680,22 +680,22 @@
                 <!--Start Brand One Single-->
                 <div class="brand-one__single">
                     <div class="brand-one__single-inner">
-                        <a href="#"><img src="website_assets/images/brand/6.png" alt=""></a>
+                        <a href="#"><img src="{{ asset('website_assets/images/brand/6.png') }}" alt=""></a>
                     </div>
                 </div>
                 <div class="brand-one__single">
                     <div class="brand-one__single-inner">
-                        <a href="#"><img src="website_assets/images/brand/7.png" alt=""></a>
+                        <a href="#"><img src="{{ asset('website_assets/images/brand/7.png') }}" alt=""></a>
                     </div>
                 </div>
                 <div class="brand-one__single">
                     <div class="brand-one__single-inner">
-                        <a href="#"><img src="website_assets/images/brand/8.png" alt=""></a>
+                        <a href="#"><img src="{{ asset('website_assets/images/brand/8.png') }}" alt=""></a>
                     </div>
                 </div>
                 <div class="brand-one__single">
                     <div class="brand-one__single-inner">
-                        <a href="#"><img src="website_assets/images/brand/9.png" alt=""></a>
+                        <a href="#"><img src="{{ asset('website_assets/images/brand/9.png') }}" alt=""></a>
                     </div>
                 </div>
                 <!--End Brand One Single-->
@@ -703,3 +703,4 @@
         </div>
     </section>
 @endsection
+
