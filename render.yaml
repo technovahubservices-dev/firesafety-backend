@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: firesafety-backend
+    env: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /ping
