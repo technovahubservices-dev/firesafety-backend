@@ -9,18 +9,20 @@ services:
       - key: APP_ENV
         value: production
       - key: APP_DEBUG
-        value: "false"
+        value: "true"
       - key: APP_URL
-        value: https://firesafety-backend-7q42.onrender.com
+        value: https://aroun-fires.onrender.com
+      - key: APP_KEY
+        value: base64:mUJm+3sEaSxkCOzjYPZenmwN/7HLxk7w2wCjrAudLN0=
       - key: DB_CONNECTION
         value: mysql
       - key: DB_HOST
-        sync: false
+        value: 30265r.h.filess.io
       - key: DB_PORT
-        sync: false
+        value: "61001"
       - key: DB_DATABASE
-        sync: false
+        value: aroun_fires_db_exceptplay
       - key: DB_USERNAME
-        sync: false
+        value: aroun_fires_db_exceptplay
       - key: DB_PASSWORD
-        sync: false
+        value: 0bd939271134f981e637cad4815f792a2a2192bb
