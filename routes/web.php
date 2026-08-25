@@ -4,7 +4,13 @@ use App\Http\Controllers\AuthenticationController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\WebsiteController;
 use Illuminate\Support\Facades\Route;
-
+Route::get('/debug-db-host', function () {
+    return [
+        'env_host' => getenv('DB_HOST'),
+        'config_host' => config('database.connections.mysql.host'),
+        'port' => config('database.connections.mysql.port'),
+    ];
+});
 
 /*
 |--------------------------------------------------------------------------
@@ -33,13 +39,7 @@ Route::get('/contact', [WebsiteController::class, 'contact'])->name('contact');
 Route::post('/insertenquiry', [WebsiteController::class, 'insertenquiry'])->name('insertenquiry');
 Route::get('/ensuring-safety-with-fixed-lifeline', [WebsiteController::class, 'ensuringsafetywithfixedlifeline'])->name('ensuringsafetywithfixedlifeline');
 
-Route::get('/debug-db-host', function () {
-    return [
-        'env_host' => getenv('DB_HOST'),
-        'config_host' => config('database.connections.mysql.host'),
-        'port' => config('database.connections.mysql.port'),
-    ];
-});
+
 //adminpannel
 Route::get('/adminlogin', [AuthenticationController::class, 'login'])->name('login');
 Route::post('/logincheck', [AuthenticationController::class, 'logincheck'])->name('logincheck');
