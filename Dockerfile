@@ -62,7 +62,7 @@ fi\n\
 echo "Runtime cache clear..."\n\
 php artisan config:clear\n\
 php artisan route:clear\n\
-php artisan view:clear\n\
+php artisan view:clear || true\n\
 php artisan storage:link || true\n\
 echo "Starting Apache..."\n\
 exec apache2-foreground' > /usr/local/bin/start.sh \
