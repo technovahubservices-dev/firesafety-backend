@@ -1,4 +1,4 @@
-```dockerfile
+
 FROM php:8.2-apache
 
 # Install system dependencies
@@ -123,4 +123,4 @@ EOF
 RUN chmod +x /usr/local/bin/start.sh
 
 CMD ["/usr/local/bin/start.sh"]
-```
+
